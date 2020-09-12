@@ -50,7 +50,8 @@
     </section>
 
     <section>
-      <h2>Favoritas</h2>
+      <h2>Favoritas</h2> 
+      <div><button class="boton-recomendada" onclick="peliRecomendada()">Mi recomendada</button></div>
       <div class="favoritas_container">
         <div class="favorita">
           <div><img class="poster" src="https://pics.filmaffinity.com/Long_Shot-123241117-large.jpg" alt="Long shot movie poster"></div>
@@ -102,7 +103,35 @@
           </div>
           <div class="peliculas_botones">
             <button>Editar</button>
-            <button>Eliminar</button>
+            <button onclick="noPodesEliminar()">Eliminar</button>
+          </div>
+        </div>
+      </article>
+      <article id="recomendada" class="peliculas">
+        <div class="peliculas_container">
+          <div>
+            <img class="poster" src="https://images-na.ssl-images-amazon.com/images/I/91sustfojBL._AC_SY606_.jpg"
+              alt="Parasite movie poster">
+          </div>
+          <div class="derecha">
+            <h4>Titulo</h4>
+            <p>Parasite</p>
+            <h4>Género</h4>
+            <p>Drama</p>
+            <h4>Descripción</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam aliquam iste expedita recusandae
+              laudantium accusantium, molestias aut voluptatibus odit maxime veritatis corporis quam pariatur saepe
+              dolore repudiandae consequatur corrupti quibusdam?</p>
+          </div>
+        </div>
+        <div class="peliculas_container">
+          <div>
+            <h4>Calificación</h4>
+            <p>&#9734;&#9734;&#9734;&#9734;&#9734;</p>
+          </div>
+          <div class="peliculas_botones">
+            <button>Editar</button>
+            <button onclick="noPodesEliminar()">Eliminar</button>
           </div>
         </div>
       </article>
@@ -130,35 +159,7 @@
           </div>
           <div class="peliculas_botones">
             <button>Editar</button>
-            <button>Eliminar</button>
-          </div>
-        </div>
-      </article>
-      <article class="peliculas">
-        <div class="peliculas_container">
-          <div>
-            <img class="poster" src="https://images-na.ssl-images-amazon.com/images/I/91sustfojBL._AC_SY606_.jpg"
-              alt="Parasite movie poster">
-          </div>
-          <div class="derecha">
-            <h4>Titulo</h4>
-            <p>Parasite</p>
-            <h4>Género</h4>
-            <p>Drama</p>
-            <h4>Descripción</h4>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam aliquam iste expedita recusandae
-              laudantium accusantium, molestias aut voluptatibus odit maxime veritatis corporis quam pariatur saepe
-              dolore repudiandae consequatur corrupti quibusdam?</p>
-          </div>
-        </div>
-        <div class="peliculas_container">
-          <div>
-            <h4>Calificación</h4>
-            <p>&#9734;&#9734;&#9734;&#9734;&#9734;</p>
-          </div>
-          <div class="peliculas_botones">
-            <button>Editar</button>
-            <button>Eliminar</button>
+            <button onclick="noPodesEliminar()">Eliminar</button>
           </div>
         </div>
       </article>
@@ -179,8 +180,7 @@
 
         <label for="calificacion">Calificación</label>
         <input class="info" type="text" name="calificacion" id="calificacion">
-
-        <button id="enviar" type="submit">
+        <button id="enviar" type="submit" onclick="mostrarAlert()">
           Enviar
         </button>
       </form>
@@ -190,5 +190,5 @@
     <p>Pelis App 2020</p>
   </footer>
 </body>
-
+<script src="./script.js"></script>
 </html>

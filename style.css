@@ -236,3 +236,8 @@ footer {
 footer p {
   color: #dfdfdf;
 }
+
+.boton-recomendada{
+  display:block;
+  margin: 0 auto;
+}
