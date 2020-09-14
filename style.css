@@ -3,42 +3,15 @@
   padding: 0;
   box-sizing: border-box;
 }
-
-*:focus{
-outline:3px solid red !important;
+body{
+background-image: linear-gradient(to top, #dad4ec 0%, #dad4ec 1%, #f3e7e9 100%);
 }
-
-a.skip-link {
-    background-color: #fff;
-    font-family: sans-serif;
-    position: absolute;
-    top: auto;
-    width: 2px;
-    height: 2px;
-    overflow: hidden;   
-}
-
-a.skip-link:focus {
-    color: #000000;
-    left: -450px;
-    top: auto;
-    width: 20%;
-    height: auto;
-    overflow: auto;
-    margin: 0 35%;
-    padding: 5px;
-    font-size: 14px;
-    outline: 3px solid #000000;
-    text-align: center;
-    z-index: 999;
-}
-
 h1,
 h2,
 h3,
 h4 {
-  color: #041e76;
-  font-family: sans-serif;
+font-family: 'Lato', sans-serif;
+color:#4b5156;
 }
 
 p,
@@ -47,10 +20,10 @@ label,
 input,
 button,
 textarea {
-  color: #4b5156;
+  color: #7f7f7f;
   font-size: 17px;
   font-weight: bold;
-  font-family: monospace;
+  font-family: 'Lato', sans-serif;
 }
 
 a {
@@ -81,7 +54,7 @@ h4 {
 header {
   margin-bottom: 15px;
   padding: 15px;
-  background-color: whitesmoke;
+  background-image: linear-gradient(to top, #dad4ec 0%, #dad4ec 1%, #f3e7e9 100%);
   box-shadow: 1px 1px 4px 0 rgba(0, 0, 0, 0.3);
 }
 
@@ -94,14 +67,10 @@ nav ul {
   display: inline;
 }
 
-nav ul {
-  float: right;
-}
-
 nav ul li {
-  display: inline-block;
-  font-size: 20px;
+  float: right;
   padding: 10px;
+  font-size: 20px;
   margin-left: 20px;
 }
 
@@ -118,7 +87,6 @@ section {
   text-align: center;
   position: relative;
   width: 100%;
-  background: whitesmoke;
   padding: 10px;
 }
 
@@ -133,14 +101,7 @@ section {
 }
 
 #descripcion_destacada {
-  background-color: #d1d1d1;
   text-align: left;
-  padding: 5px;
-}
-
-#descripcion_destacada h4,
-#descripcion_destacada p {
-  color: black;
 }
 
 #izquierda {
@@ -161,7 +122,8 @@ section {
 }
 
 .peliculas {
-  border: 2px solid lightslategray;
+  box-shadow: 1px 1px 4px 0 rgba(0, 0, 0, 0.3);
+  border-radius: 5px;
   width: 610px;
   margin: 20px auto;
   padding: 10px;
@@ -198,10 +160,10 @@ section {
   display: block;
   width: 500px;
   margin: 0 auto;
-  border: 1px solid lightslategray;
   padding: 15px;
   border-radius: 5px;
-  background-color: #dfdfdf;
+  box-shadow: 1px 1px 4px 0 rgba(0, 0, 0, 0.3);
+  background-color: #cbc0ea;
   margin-bottom: 50px;
 }
 
@@ -228,16 +190,11 @@ section {
 }
 
 footer {
-  background: #041e76;
+  background: #cbc0ea;
   text-align: center;
   padding: 15px;
 }
 
 footer p {
-  color: #dfdfdf;
-}
-
-.boton-recomendada{
-  display:block;
-  margin: 0 auto;
+  color:#4b5156;
 }
